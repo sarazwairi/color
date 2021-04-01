@@ -2,30 +2,39 @@
 
 var username = prompt("what's your name?");
 
-    alert("welcome " + username + " to van's gallery");
+    alert("welcome " + username + " to the color theory page");
 
-welcomeMessage(username);
+console.log(username);
 
 
 // second prompt
 
-var painting = prompt("what's your favourite van's painting? please choose between: S -> Starry Night, I -> Irises  or W -> Wheatfield ");
+var color = prompt("what's your favourite theory ? please choose between: C -> complementary colors, T -> trindic colors ,A ->analogous color");
 
-console.log(painting);
+console.log(color);
+
+
 
 
 // third prompt
 
-var numberOfPaintings = prompt("How many times you want us to view your favourite painting?");
+var numberOfTheorys = prompt("How many times you want us to see your favourite theory?");
    
-var p = '';
+p = '' ;
 
-    if (painting == 'S') {
-        p = ('<img src="photos/starryNight.jpg" >');
-    } else if (painting == 'I') {
-        p = ('<img src="photos/irises.jpg" >');
-    } else if (painting == 'W') {
-        p = ('<img src="photos/field.jpg" >');
+    if (color == 'C') {
+        p = ('<img src="picture/1.png" >');
+    } else if (color == 'T') {
+        p = ('<img src="picture/3.png" >');
+    } else if (color == 'A') {
+        p = ('<img src="picture/2.png" >');
     }
    
    
+    document.write('<h3>' + "Hello" + username + '</h3>');
+       
+    document.write('<h2>' + "Your favourite theory is:" + color + '</h2>');
+
+    document.write('<h2>' + "Number of theorys is:" + numberOfTheorys + '</h2>');
+     
+    document.write(p)
