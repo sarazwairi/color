@@ -106,3 +106,23 @@ footer p
     background-color: #282846;
     color: white;
 }
+
+#section
+{
+        position: absolute;
+   }
+   
+   .label {
+        float: left;
+        width: 45%;
+        padding: 2%;
+   }
+   
+   .label {
+        clear: both;
+   }
+   
+   .buttom {
+        float: right;
+        width: 45%;
+}
